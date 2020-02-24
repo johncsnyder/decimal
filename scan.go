@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"unicode"
 
-	"github.com/ericlagergren/decimal/internal/arith"
-	"github.com/ericlagergren/decimal/internal/c"
+	"github.com/johncsnyder/decimal/internal/arith"
+	"github.com/johncsnyder/decimal/internal/c"
 )
 
 func (z *Big) scan(r io.ByteScanner) error {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/ericlagergren/decimal"
+	"github.com/johncsnyder/decimal"
 )
 
 // Test whether Set or Scan is faster for setting constants.

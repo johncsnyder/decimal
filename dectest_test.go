@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ericlagergren/decimal/dectest"
+	"github.com/johncsnyder/decimal/dectest"
 )
 
 // TestDecTests runs the dectest test suite.

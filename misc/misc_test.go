@@ -3,9 +3,9 @@ package misc_test
 import (
 	"testing"
 
-	"github.com/ericlagergren/decimal"
-	"github.com/ericlagergren/decimal/internal/test"
-	"github.com/ericlagergren/decimal/misc"
+	"github.com/johncsnyder/decimal"
+	"github.com/johncsnyder/decimal/internal/test"
+	"github.com/johncsnyder/decimal/misc"
 )
 
 func TestBig_NextMinus(t *testing.T) { test.NextMinus.Test(t) }

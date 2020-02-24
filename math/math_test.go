@@ -3,9 +3,9 @@ package math_test
 import (
 	"testing"
 
-	"github.com/ericlagergren/decimal"
-	"github.com/ericlagergren/decimal/internal/test"
-	"github.com/ericlagergren/decimal/math"
+	"github.com/johncsnyder/decimal"
+	"github.com/johncsnyder/decimal/internal/test"
+	"github.com/johncsnyder/decimal/math"
 )
 
 func TestExp(t *testing.T)   { test.Exp.Test(t) }

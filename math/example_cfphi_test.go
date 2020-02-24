@@ -4,8 +4,8 @@ import (
 	"fmt"
 	gmath "math"
 
-	"github.com/ericlagergren/decimal"
-	"github.com/ericlagergren/decimal/math"
+	"github.com/johncsnyder/decimal"
+	"github.com/johncsnyder/decimal/math"
 )
 
 var one = new(decimal.Big).SetUint64(1)

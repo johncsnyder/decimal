@@ -1,6 +1,6 @@
 package math
 
-import "github.com/ericlagergren/decimal"
+import "github.com/johncsnyder/decimal"
 
 var gB *decimal.Big
 
