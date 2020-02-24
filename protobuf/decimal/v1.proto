@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package decimal.v1;
+
+option go_package = "decimal/v1";
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
+option (gogoproto.gostring_all) = true;
+option (gogoproto.equal_all) = true;
+// option (gogoproto.verbose_equal_all) = true;
+option (gogoproto.goproto_stringer_all) = false;
+option (gogoproto.stringer_all) =  true;
+// option (gogoproto.populate_all) = true;
+// option (gogoproto.testgen_all) = true;
+// option (gogoproto.benchgen_all) = true;
+option (gogoproto.marshaler_all) = true;
+option (gogoproto.sizer_all) = true;
+option (gogoproto.unmarshaler_all) = true;
+// option (gogoproto.goproto_getters_all) = false;
+option (gogoproto.goproto_unrecognized_all) = false;
+
+// Finite decimal representation
+message Decimal {
+  // Decimal represented as
+  //
+  // If negative,   -value x 10**-scale
+  // else            value x 10**-scale
+  // 
+
+  // Big-endian unsigned unlimited precision representation of the decimal coefficient
+  //
+  // In python, int.to_bytes, int.from_bytes
+  // (1024).to_bytes(2, byteorder='big')
+  // In golang,
+  // https://godoc.org/github.com/ericlagergren/decimal#Big.Compose
+  // https://golang.org/pkg/math/big/#Int.SetBytes
+  // https://godoc.org/github.com/cockroachdb/apd#NewWithBigInt
+  //
+  bytes value = 1;
+
+  int32 scale = 2;
+  bool negative = 3;
+}
